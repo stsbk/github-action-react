@@ -35,7 +35,6 @@ jobs:
       - name: Lint application
         run: npm run lint
   build:
-    runs-on: ubuntu-latest
     needs: [lint, test]
     strategy:
       matrix:
