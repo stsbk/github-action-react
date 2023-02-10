@@ -47,7 +47,7 @@ jobs:
       - name: Install Node JS
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ marix.node-version }}
+          node-version: ${{ matrix.node-version }}
       - name: Cache deps
         uses: actions/checkout@v3
         with:
